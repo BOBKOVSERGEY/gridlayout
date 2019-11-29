@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+}
+.grid {
+    /*display: grid;*/
+    /*grid-template-columns: minmax(70px, 250px) repeat(3, auto) minmax(70px, 250px);*/
+    /*grid-template-rows: repeat(5, 1fr);*/
+    /*отвечает за колличество колонок в клетке
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    отвечает за колличество рядов в клетке
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-columns: [left] 200px repeat(3, [content] 1fr) [right] 200px;
+    grid-template-rows: [top] 1fr [middle] 1fr [bottom] 1fr;
+
+     задаем интервал между ячейками
+    grid-gap: 20px;
+
+     задаем интервал только для колонок
+    grid-column-gap: 20px;
+
+     задаем интервал только для рядов
+    grid-row-gap: 10px;
+    задаем интервал между рядами и колонками
+    grid-gap: 10px 20px;*/
+   /* grid-gap: 15px;*/
+   /*grid-template-areas:*/
+   /*         'header header header header header' 'aside-left content aside-right' 'aside-left content aside-right' 'aside-left content aside-right' 'footer footer footer footer footer'*/
+   /* ;*/
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 150px);
+    justify-content: center;
+    grid-gap: 10px;
+
+}
+.grid__item {
+     background-color: orangered;
+     color: white;
+     /*border-radius: 25px;*/
+     border: 1px solid grey;
+     padding: 25px;
+     text-align: center;
+     /*margin-bottom: 25px;*/
+}
+.grid__item {
+    /*в какой калонке будет элемент
+    grid-column-start: 2;
+     на какой калонке будет заканчиваться элемент
+    grid-column-end: 5;
+    в каком ряду будет элемент
+    grid-row-start: 2;
+     на каком ряде будет заканчиваться элемент
+    grid-row-end: 4;
+    grid-column-end: -1;
+    grid-row-end: -1;
+
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+
+    grid-area: 2 / 2 / -1 / -1;
+    grid-column-start: left;
+    grid-column-end: content 3;
+    grid-row-start: top;
+    grid-row-end: bottom;
+    */
+
+
+
+}
+.grid__item_header {
+   /*grid-column: 1 / -1;*/
+   /* grid-area: header;*/
+}
+.grid__item_aside-left {
+    /*grid-row: span 3;*/
+    /*grid-area: aside-left;*/
+}
+.grid__item_content {
+    /*grid-column: 2 / 5;*/
+    /*grid-row: span 3;*/
+    /*grid-area: content;*/
+}
+.grid__item_aside-right{
+    /*grid-row: span 3;*/
+    /*grid-area: aside-right;*/
+}
+
+.grid__item_footer {
+    /*grid-column: 1 / -1;*/
+    /*grid-area: footer;*/
+}
